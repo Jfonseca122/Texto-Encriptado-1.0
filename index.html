@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+
+        <nav class="contenido___imagen">
+
+            <div class="contenido___imagen__div">
+                <img class="img_logo" src="./img/Logo-1.png" alt="Logo de alura latam">
+               
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <section class="section">
+
+            
+            
+            <div class="section__contenido">
+                <div class="section__contenido__textarea">
+                    <textarea  class="textarea__ingresar__texto" name="ingresar__texto" id="ingresar__texto" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+
+                <div class="section__contenido__alerta">
+
+                    <img class="img_alerta" src="./img/bi_exclamation-circle-fill.png" alt="Logo de alerta ">
+                    <small class="texto__alerta">solo letras minuscula y sin acento</small>
+
+                </div>
+
+                <div class="contenido___botones">
+
+                    <button onclick="encriptar() " class="boton__encriptar">Encriptar</button>
+                    <button onclick="desencriptar ()" class="boton__desencriptar">Desencriptar</button>
+
+
+                </div>
+
+                
+                
+
+            </div>
+
+            
+
+        </section>
+
+        <div class="contenido___recibir__texto">
+
+            <div class="contenido___recibir__texto__card">
+
+                
+
+                <img id="id__img__detalle" class="img__detalle" src="./img/Muñeco.png" alt="Muñeco detalle">
+                <div class="alerta__recibir__texto">
+
+                    <p id="id__texto__mostrar" class="texto__mostrar">Ningun mensaje fue <br> encontrado</p>
+
+                </div>
+                <div class="contenedor__textarea__recibir__texto">
+                    <textarea readonly class="textarea__recibir__texto" name="textarea__recibir__texto" id="textarea__recibir__texto">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                </div>
+
+                <div id="id__contenido___boton__copiar" class="contenido___boton__copiar">
+                    <button  onclick="copiarTexto()" class="copiar">copy</button>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+         <p class="texto__footer">Hecho por Julian Fonseca</p>
+    </footer>
+
+    <script src="js.js"></script>
+
+    
+    
+</body>
+</html>
